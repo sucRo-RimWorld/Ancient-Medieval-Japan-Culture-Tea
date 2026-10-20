@@ -7,7 +7,7 @@
   <AMJT_DriedTeaLeaves.label>乾燥茶葉</AMJT_DriedTeaLeaves.label>
   <AMJT_DriedTeaLeaves.description>加熱・乾燥させた茶葉。煮出して茶にする。</AMJT_DriedTeaLeaves.description>
   <AMJT_BoiledTea.label>茶</AMJT_BoiledTea.label>
-  <AMJT_BoiledTea.description>乾燥した茶葉を煮出した茶。薬物ではなく、わずかな娯楽をもたらす。</AMJT_BoiledTea.description>
+  <AMJT_BoiledTea.description>乾燥した茶葉を煮出した茶。わずかな娯楽をもたらすが、短時間に飲み過ぎると一時的に睡眠効率が低下する。依存や離脱症状はない。</AMJT_BoiledTea.description>
   <AMJT_KogashiYu.label>こがし湯</AMJT_KogashiYu.label>
   <AMJT_KogashiYu.description>米や大麦を炒って粉にし、湯に溶いて飲食する。粉ごと摂るため、わずかな栄養がある。</AMJT_KogashiYu.description>
 </LanguageData>

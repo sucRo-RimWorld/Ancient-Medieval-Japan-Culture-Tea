@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "feature": "Historical non-drug tea and kogashi-yu",
+  "feature": "Historical non-drug tea and kogashi-yu, with excess-only transient sleep penalty",
   "owner": "sucRo-RimWorld/Ancient-Medieval-Japan-Culture-Tea",
-  "scope": "Vanilla RimWorld 1.6 tea bush and leaves, two low-joy non-drug drinks, Vanilla rice and optional AMJ barley. No edible kogashi duplicate.",
+  "scope": "Vanilla RimWorld 1.6 tea bush/leaves, two low-joy non-drug drinks, Vanilla rice and optional AMJ barley; tea only gains a temporary nonaddictive, no-positive-buff rest-recovery penalty after repeated cups. No edible kogashi duplicate.",
   "status": "ready",
   "search": {
     "date": "2026-10-20",
@@ -11,7 +11,8 @@
       "VE Brewing Coffees and Teas 1.6 green tea source",
       "SYR Coffee and Tea Continued 1.6 tea source",
       "Erin's Hot Drinks 1.6 workshop content",
-      "AMJ Grains and Medieval Overhaul grain drinks"
+      "AMJ Grains and Medieval Overhaul grain drinks",
+      "RimWorld Hediff severity per day ingestion outcome sleep RestRateMultiplier vanilla XML"
     ],
     "ecosystems": [
       "vanilla_mo",
@@ -19,13 +20,13 @@
       "ve",
       "non_ve"
     ],
-    "limitations": "Erin latest distributable XML/dependencies not retrievable, but public content and explicit extra buffs disqualify unchanged full-Mod reuse. 1.6 live native games and other barley-provider XML are not yet tested. MO was inspected from supplied 1.6 ZIP."
+    "limitations": "Erin latest distributable XML/dependencies not retrievable, but public content and explicit extra buffs disqualify unchanged full-Mod reuse. 1.6 live native games and other barley-provider XML are not yet tested. MO was inspected from supplied 1.6 ZIP. The mild excess-only sleep impact is confirmed as a design amendment, not as a native test. RimWorld 1.6 API still requires acceptance; decompiled mechanisms are from an older source."
   },
   "evidence": [
     {
       "id": "audit-20261020",
       "path": "Docs/Research/ExistingDrinksAudit.md",
-      "sha256": "6ad3e647bcdb10e757a70d3945c897b7daeae0d9fa080af3dfaca1117f3aa2db"
+      "sha256": "f1c54080ec0fa16c7b7c6067791f2bb25ca8ae7ad8ea64e755e210df00a7f33f"
     }
   ],
   "candidates": [
@@ -41,7 +42,7 @@
         "historical_fit": "Psychoid drink mismatches Camellia tea and kogashi.",
         "dependencies": "Vanilla/MO add no suitable standalone two drinks.",
         "retention": "Keep Vanilla RawRice and existing low-tech benches; do not require MO.",
-        "progression_balance": "Psychoid drug does not fulfill non-drug light recreation.",
+        "progression_balance": "Psychoid drug does not fulfill non-drug light recreation and excess-only negative sleep efficiency.",
         "reuse": "Use Vanilla benches, raw rice and Joy framework only.",
         "maintenance_license": "RimWorld assets are game-provided, no packaging copied."
       },
@@ -77,7 +78,7 @@
         "historical_fit": "Modern sugar espresso and extensive drinks are out-of-period.",
         "dependencies": "VBE, VEF, Harmony plus VCE for green tea.",
         "retention": "Cannot load only the suitable ancient beverage.",
-        "progression_balance": "DrugComp, mood thoughts and equipment tech contradict scope.",
+        "progression_balance": "DrugComp, positive chemical effects and modern dependencies contradict narrow excess-only rest penalty with no addiction.",
         "reuse": "Only source-level technique reference.",
         "maintenance_license": "Do not copy textures/code; VE content is prior-art-only by AMJ policy."
       },
@@ -95,7 +96,7 @@
         "historical_fit": "Neither unmodified pack implements non-drug historical tea plus toasted rice/barley slurry.",
         "dependencies": "SYR needs Harmony; Erin full transitive dependency internals not directly inspected.",
         "retention": "Large unrelated drinks/effects cannot be excluded without major rework.",
-        "progression_balance": "Chemical tolerance/rest/buffs and extra drinks conflict.",
+        "progression_balance": "SYR chemical tolerance/addiction and broader rest/health buffs conflict with the approved overconsumption-only negative rest recovery; Erin source unknown.",
         "reuse": "SYR low-tech recipe pattern inspected; Erin source missing, no copying.",
         "maintenance_license": "SYR MIT; Erin CC BY-NC-ND 4.0, do not reuse assets/Defs."
       },
@@ -104,9 +105,9 @@
   ],
   "decision": {
     "kind": "independent",
-    "rationale": "Existing sources directly show drug/modern-machine/extra-content behavior; neither VE nor non-VE is an appropriate unmodified two-drink low-tech no-buff implementation. Reusing Vanilla ingestion and cooking is the narrowest solution.",
+    "rationale": "Existing sources show drug/modern-machine/extra-content behavior; neither VE nor non-VE delivers unmodified historically appropriate non-drug tea and rice/barley kogashi-yu with the optional tea-only excess-sleep downside. Reuse Vanilla ingestible outcome doer, Hediff severity decay, RestRateMultiplier and cooking; do not introduce chemical drug policy, addiction or new dependencies.",
     "specification": "Docs/Design.md",
-    "independent_gap": "Historically appropriate non-drug tea and swallowed toasted rice/barley kogashi-yu in one tiny Mod without drug/caffeine buffs or extra modern items."
+    "independent_gap": "Historical low-tech tea and toasted-rice/barley kogashi-yu in one tiny optional Culture-family child, with ordinary no-buff drinking and excess tea only causing short lived negative sleep recovery; no drug, dependency, tolerance, withdrawal or extra modern items."
   },
   "unresolved": []
 }
