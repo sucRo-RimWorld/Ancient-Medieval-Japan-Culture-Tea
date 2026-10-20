@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>AMJT_FreshTeaLeaves</defName>
+    <label>fresh tea leaves</label>
+    <description>Fresh leaves from a tea shrub. Heat and dry them before making tea; they are not an ordinary cooking ingredient.</description>
+    <graphicData><texPath>Things/Item/PlantFoodRaw/RawBerries</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <thingCategories><li>PlantMatter</li></thingCategories>
+    <statBases><MarketValue>0.7</MarketValue><Mass>0.02</Mass><DeteriorationRate>1.0</DeteriorationRate></statBases>
+    <stackLimit>75</stackLimit>
+    <tickerType>Rare</tickerType>
+    <comps><li Class="CompProperties_Rottable"><daysToRotStart>6</daysToRotStart><rotDestroys>true</rotDestroys></li></comps>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>AMJT_DriedTeaLeaves</defName>
+    <label>dried tea leaves</label>
+    <description>Tea leaves briefly heated and dried for keeping. Prepared by boiling to make a simple historical tea.</description>
+    <graphicData><texPath>Things/Item/PlantFoodRaw/RawBerries</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <thingCategories><li>PlantMatter</li></thingCategories>
+    <statBases><MarketValue>1.2</MarketValue><Mass>0.02</Mass><DeteriorationRate>0.35</DeteriorationRate></statBases>
+    <stackLimit>75</stackLimit>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>AMJT_BoiledTea</defName>
+    <label>tea</label>
+    <description>A cup of tea prepared from heated, dried leaves. A small everyday enjoyment without drug or stimulant effects.</description>
+    <graphicData><texPath>Things/Item/Food/MealSimple</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <thingCategories><li>FoodMeals</li></thingCategories>
+    <statBases>
+      <MarketValue>3</MarketValue><Mass>0.25</Mass><Nutrition>0</Nutrition>
+      <DeteriorationRate>1</DeteriorationRate><FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <stackLimit>25</stackLimit>
+    <tickerType>Rare</tickerType>
+    <comps><li Class="CompProperties_Rottable"><daysToRotStart>2</daysToRotStart><rotDestroys>true</rotDestroys></li></comps>
+    <ingestible>
+      <foodType>Fluid, Processed</foodType>
+      <preferability>NeverForNutrition</preferability>
+      <joyKind>Gluttonous</joyKind><joy>0.08</joy>
+      <baseIngestTicks>180</baseIngestTicks>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <chairSearchRadius>0</chairSearchRadius>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestSound>Ingest_Drink</ingestSound>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>AMJT_KogashiYu</defName>
+    <label>kogashi-yu</label>
+    <description>Toasted grain ground to flour and stirred into hot water. Unlike modern barley tea, the nourishing grain flour is consumed.</description>
+    <graphicData><texPath>Things/Item/Food/MealSimple</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <thingCategories><li>FoodMeals</li></thingCategories>
+    <statBases>
+      <MarketValue>3</MarketValue><Mass>0.3</Mass><Nutrition>0.05</Nutrition>
+      <DeteriorationRate>1</DeteriorationRate><FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <stackLimit>25</stackLimit>
+    <tickerType>Rare</tickerType>
+    <comps><li Class="CompProperties_Rottable"><daysToRotStart>2</daysToRotStart><rotDestroys>true</rotDestroys></li></comps>
+    <ingestible>
+      <foodType>Fluid, Processed</foodType>
+      <preferability>NeverForNutrition</preferability>
+      <joyKind>Gluttonous</joyKind><joy>0.06</joy>
+      <baseIngestTicks>180</baseIngestTicks>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <chairSearchRadius>0</chairSearchRadius>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestSound>Ingest_Drink</ingestSound>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+    </ingestible>
+  </ThingDef>
+</Defs>
