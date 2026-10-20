@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Ancient &amp; Medieval Japan - Tea（中世日本 - 茶）</name>
+  <name>Ancient &amp; Medieval Japan - Culture Tea（中世日本 - 文化・茶）</name>
   <author>sucRo-RimWorld</author>
   <packageId>sucro.ancientmedievaljapan.tea</packageId>
   <supportedVersions><li>1.6</li></supportedVersions>
   <loadAfter>
     <li>sucro.ancientmedievaljapan.core</li>
   </loadAfter>
-  <description>Historical everyday tea and toasted-grain-flour kogashi-yu, as non-drug recreational drinks. Tea is self-contained; AMJ Grains barley is an optional ingredient for kogashi-yu. Early development build: provisional values and Vanilla graphics; no game-run acceptance yet.
+  <description>A standalone AMJ Culture-family child Mod for historical everyday tea and toasted-grain-flour kogashi-yu, as non-drug recreational drinks. Does not require AMJ Culture. Tea is self-contained; AMJ Grains barley is an optional ingredient for kogashi-yu. Early development build: provisional values and Vanilla graphics; no game-run acceptance yet.
 
-中世日本の日常の茶と、米・大麦の炒り粉を湯で溶いたこがし湯を追加する。非ドラッグの軽い娯楽飲料。Grainsの大麦は任意連携。開発中につき数値・画像・実機動作は未確定。</description>
+AMJ Culture系列の単独導入可能な子Mod。中世日本の日常の茶と、米・大麦の炒り粉を湯で溶いたこがし湯を追加する。Culture本体は必須ではない。非ドラッグの軽い娯楽飲料。Grainsの大麦は任意連携。開発中につき数値・画像・実機動作は未確定。</description>
 </ModMetaData>
