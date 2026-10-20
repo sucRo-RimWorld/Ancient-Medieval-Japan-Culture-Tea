@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef>
+    <defName>AMJT_DryTeaLeaves</defName>
+    <label>heat and dry tea leaves</label>
+    <description>Heat freshly picked tea leaves and dry them for keeping.</description>
+    <jobString>Drying tea leaves.</jobString>
+    <workSkill>Cooking</workSkill><workSpeedStat>CookSpeed</workSpeedStat>
+    <workAmount>250</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <ingredientValueGetterClass>IngredientValueGetter_Volume</ingredientValueGetterClass>
+    <recipeUsers><li>Campfire</li><li>FueledStove</li><li>ElectricStove</li></recipeUsers>
+    <ingredients><li><filter><thingDefs><li>AMJT_FreshTeaLeaves</li></thingDefs></filter><count>5</count></li></ingredients>
+    <fixedIngredientFilter><thingDefs><li>AMJT_FreshTeaLeaves</li></thingDefs></fixedIngredientFilter>
+    <products><AMJT_DriedTeaLeaves>5</AMJT_DriedTeaLeaves></products>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>AMJT_BoilTea</defName>
+    <label>prepare tea</label>
+    <description>Boil heated and dried tea leaves to make tea.</description>
+    <jobString>Preparing tea.</jobString>
+    <workSkill>Cooking</workSkill><workSpeedStat>CookSpeed</workSpeedStat>
+    <workAmount>180</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <ingredientValueGetterClass>IngredientValueGetter_Volume</ingredientValueGetterClass>
+    <recipeUsers><li>Campfire</li><li>FueledStove</li><li>ElectricStove</li></recipeUsers>
+    <ingredients><li><filter><thingDefs><li>AMJT_DriedTeaLeaves</li></thingDefs></filter><count>2</count></li></ingredients>
+    <fixedIngredientFilter><thingDefs><li>AMJT_DriedTeaLeaves</li></thingDefs></fixedIngredientFilter>
+    <products><AMJT_BoiledTea>1</AMJT_BoiledTea></products>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>AMJT_MakeKogashiYu</defName>
+    <label>prepare kogashi-yu</label>
+    <description>Roast rice or barley, grind it and mix the flour into hot water to make a nourishing grain drink.</description>
+    <jobString>Preparing kogashi-yu.</jobString>
+    <workSkill>Cooking</workSkill><workSpeedStat>CookSpeed</workSpeedStat>
+    <workAmount>230</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <ingredientValueGetterClass>IngredientValueGetter_Volume</ingredientValueGetterClass>
+    <recipeUsers><li>Campfire</li><li>FueledStove</li><li>ElectricStove</li></recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>RawRice</li></thingDefs></filter><count>3</count></li>
+    </ingredients>
+    <fixedIngredientFilter><thingDefs><li>RawRice</li></thingDefs></fixedIngredientFilter>
+    <products><AMJT_KogashiYu>1</AMJT_KogashiYu></products>
+  </RecipeDef>
+</Defs>
