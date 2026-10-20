@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/JoyGiverDef[defName="EatChocolate"]/thingDefs</xpath>
+    <value>
+      <li>AMJT_BoiledTea</li>
+      <li>AMJT_KogashiYu</li>
+    </value>
+  </Operation>
+</Patch>

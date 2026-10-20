@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "feature": "Historical non-drug tea and kogashi-yu",
+  "owner": "sucRo-RimWorld/Ancient-Medieval-Japan-Tea",
+  "scope": "Vanilla RimWorld 1.6 tea bush and leaves, two low-joy non-drug drinks, Vanilla rice and optional AMJ barley. No edible kogashi duplicate.",
+  "status": "ready",
+  "search": {
+    "date": "2026-10-20",
+    "queries": [
+      "RimWorld 1.6 tea plants drinks coffee mods XML",
+      "VE Brewing Coffees and Teas 1.6 green tea source",
+      "SYR Coffee and Tea Continued 1.6 tea source",
+      "Erin's Hot Drinks 1.6 workshop content",
+      "AMJ Grains and Medieval Overhaul grain drinks"
+    ],
+    "ecosystems": [
+      "vanilla_mo",
+      "amj",
+      "ve",
+      "non_ve"
+    ],
+    "limitations": "Erin latest distributable XML/dependencies not retrievable, but public content and explicit extra buffs disqualify unchanged full-Mod reuse. 1.6 live native games and other barley-provider XML are not yet tested. MO was inspected from supplied 1.6 ZIP."
+  },
+  "evidence": [
+    {
+      "id": "audit-20261020",
+      "path": "Docs/Research/ExistingDrinksAudit.md",
+      "sha256": "6ad3e647bcdb10e757a70d3945c897b7daeae0d9fa080af3dfaca1117f3aa2db"
+    }
+  ],
+  "candidates": [
+    {
+      "name": "Vanilla / Medieval Overhaul",
+      "ecosystem": "vanilla_mo",
+      "version": "Vanilla 1.6 and MO 1.6",
+      "evidence": [
+        "audit-20261020"
+      ],
+      "comparison": {
+        "function": "Vanilla psychite tea is a drug, RawRice is a grain source, MO cooking/grains are not the pair of drinks.",
+        "historical_fit": "Psychoid drink mismatches Camellia tea and kogashi.",
+        "dependencies": "Vanilla/MO add no suitable standalone two drinks.",
+        "retention": "Keep Vanilla RawRice and existing low-tech benches; do not require MO.",
+        "progression_balance": "Psychoid drug does not fulfill non-drug light recreation.",
+        "reuse": "Use Vanilla benches, raw rice and Joy framework only.",
+        "maintenance_license": "RimWorld assets are game-provided, no packaging copied."
+      },
+      "outcome": "independent"
+    },
+    {
+      "name": "Existing AMJ Grains / Culture / Environment",
+      "ecosystem": "amj",
+      "version": "main 2026-10-20",
+      "evidence": [
+        "audit-20261020"
+      ],
+      "comparison": {
+        "function": "Grains provides grains and future edible kogashi, not drink recipes.",
+        "historical_fit": "Ingredient ownership fits history without duplicating cooked flour.",
+        "dependencies": "Tea must run without Grains.",
+        "retention": "Grains nine-food initial release remains unchanged.",
+        "progression_balance": "Small Joy for drink separate from nutritional food.",
+        "reuse": "Conditional AMJC_Barley input only.",
+        "maintenance_license": "AMJ owned repositories, keep canonical owner roles."
+      },
+      "outcome": "optional_compatibility"
+    },
+    {
+      "name": "Vanilla Brewing Expanded - Coffees and Teas",
+      "ecosystem": "ve",
+      "version": "1.6 current GitHub main 9e3cd65e",
+      "evidence": [
+        "audit-20261020"
+      ],
+      "comparison": {
+        "function": "Green tea DrugBase and Social drug category, with candy sugar recipe/espresso machine.",
+        "historical_fit": "Modern sugar espresso and extensive drinks are out-of-period.",
+        "dependencies": "VBE, VEF, Harmony plus VCE for green tea.",
+        "retention": "Cannot load only the suitable ancient beverage.",
+        "progression_balance": "DrugComp, mood thoughts and equipment tech contradict scope.",
+        "reuse": "Only source-level technique reference.",
+        "maintenance_license": "Do not copy textures/code; VE content is prior-art-only by AMJ policy."
+      },
+      "outcome": "prior_art_only"
+    },
+    {
+      "name": "SYR Coffee and Tea Continued; Erin's Hot Drinks",
+      "ecosystem": "non_ve",
+      "version": "SYR 1.6 GitHub bda24e23; Erin Workshop 1.6, 2025-07-10",
+      "evidence": [
+        "audit-20261020"
+      ],
+      "comparison": {
+        "function": "SYR tea is caffeine addictive DrugBase; Erin includes tea, coffee, chocolate and modern research with consciousness buffs.",
+        "historical_fit": "Neither unmodified pack implements non-drug historical tea plus toasted rice/barley slurry.",
+        "dependencies": "SYR needs Harmony; Erin full transitive dependency internals not directly inspected.",
+        "retention": "Large unrelated drinks/effects cannot be excluded without major rework.",
+        "progression_balance": "Chemical tolerance/rest/buffs and extra drinks conflict.",
+        "reuse": "SYR low-tech recipe pattern inspected; Erin source missing, no copying.",
+        "maintenance_license": "SYR MIT; Erin CC BY-NC-ND 4.0, do not reuse assets/Defs."
+      },
+      "outcome": "prior_art_only"
+    }
+  ],
+  "decision": {
+    "kind": "independent",
+    "rationale": "Existing sources directly show drug/modern-machine/extra-content behavior; neither VE nor non-VE is an appropriate unmodified two-drink low-tech no-buff implementation. Reusing Vanilla ingestion and cooking is the narrowest solution.",
+    "specification": "Docs/Design.md",
+    "independent_gap": "Historically appropriate non-drug tea and swallowed toasted rice/barley kogashi-yu in one tiny Mod without drug/caffeine buffs or extra modern items."
+  },
+  "unresolved": []
+}

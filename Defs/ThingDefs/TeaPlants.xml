@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="PlantBase">
+    <defName>AMJT_TeaPlant</defName>
+    <label>tea shrub</label>
+    <description>A perennial tea shrub grown for leaves, harvested repeatedly and processed into a simple boiled tea. Not a psychoid plant.</description>
+    <graphicData>
+      <!-- Vanilla graphic is a temporary developer stand-in; tea-specific artwork awaits acceptance. -->
+      <texPath>Things/Plant/BerryPlant</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases><MaxHitPoints>90</MaxHitPoints><Nutrition>0.01</Nutrition></statBases>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <plant>
+      <harvestedThingDef>AMJT_FreshTeaLeaves</harvestedThingDef>
+      <harvestYield>6</harvestYield>
+      <harvestMinGrowth>0.75</harvestMinGrowth>
+      <harvestAfterGrowth>0.45</harvestAfterGrowth>
+      <harvestTag>Standard</harvestTag>
+      <growDays>12</growDays>
+      <lifespanDaysPerGrowDays>20</lifespanDaysPerGrowDays>
+      <sowTags><li>Ground</li></sowTags>
+      <fertilityMin>0.7</fertilityMin>
+      <fertilitySensitivity>0.4</fertilitySensitivity>
+      <sowMinSkill>4</sowMinSkill>
+      <dieIfLeafless>false</dieIfLeafless>
+      <purpose>Food</purpose>
+      <maxMeshCount>1</maxMeshCount>
+      <visualSizeRange>0.75~1.0</visualSizeRange>
+    </plant>
+  </ThingDef>
+</Defs>
