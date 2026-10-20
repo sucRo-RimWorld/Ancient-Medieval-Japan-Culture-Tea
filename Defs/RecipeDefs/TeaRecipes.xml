@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+  <!-- All recipe numeric parameters (ingredient counts, output amounts, work) are provisional, not author-approved. -->
   <RecipeDef>
     <defName>AMJT_DryTeaLeaves</defName>
     <label>heat and dry tea leaves</label>
@@ -10,7 +11,6 @@
     <effectWorking>Cook</effectWorking>
     <ingredientValueGetterClass>IngredientValueGetter_Volume</ingredientValueGetterClass>
     <recipeUsers><li>Campfire</li><li>FueledStove</li><li>ElectricStove</li></recipeUsers>
-    <!-- The six-leaf drying batch is an unapproved PR #12 candidate derived from an unapproved harvestYield. -->
     <ingredients><li><filter><thingDefs><li>AMJT_FreshTeaLeaves</li></thingDefs></filter><count>6</count></li></ingredients>
     <fixedIngredientFilter><thingDefs><li>AMJT_FreshTeaLeaves</li></thingDefs></fixedIngredientFilter>
     <products><AMJT_DriedTeaLeaves>6</AMJT_DriedTeaLeaves></products>
