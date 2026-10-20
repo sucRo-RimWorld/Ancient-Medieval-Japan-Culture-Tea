@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <AMJT_DryTeaLeaves.label>茶葉を加熱・乾燥する</AMJT_DryTeaLeaves.label>
+  <AMJT_DryTeaLeaves.description>摘み取った茶葉を加熱し、乾燥させる。</AMJT_DryTeaLeaves.description>
+  <AMJT_DryTeaLeaves.jobString>茶葉を乾燥している。</AMJT_DryTeaLeaves.jobString>
+  <AMJT_BoilTea.label>茶を煮出す</AMJT_BoilTea.label>
+  <AMJT_BoilTea.description>乾燥茶葉を煮出して茶を作る。</AMJT_BoilTea.description>
+  <AMJT_BoilTea.jobString>茶を煮出している。</AMJT_BoilTea.jobString>
+  <AMJT_MakeKogashiYu.label>こがし湯を作る</AMJT_MakeKogashiYu.label>
+  <AMJT_MakeKogashiYu.description>米・大麦を炒って挽き、湯に溶いてこがし湯を作る。</AMJT_MakeKogashiYu.description>
+  <AMJT_MakeKogashiYu.jobString>こがし湯を作っている。</AMJT_MakeKogashiYu.jobString>
+</LanguageData>
