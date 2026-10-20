@@ -1,8 +1,10 @@
-# Ancient & Medieval Japan — Tea / 茶とこがし湯
+# Ancient & Medieval Japan — Culture Tea / 茶とこがし湯
 
-**Owner:** [Ancient-Medieval-Japan-Tea](https://github.com/sucRo-RimWorld/Ancient-Medieval-Japan-Tea)  
+**Owner:** [Ancient-Medieval-Japan-Culture-Tea](https://github.com/sucRo-RimWorld/Ancient-Medieval-Japan-Culture-Tea) （Culture系列の子Mod）  
 **Decision date:** 2026-10-20. **State:** scope accepted; initial XML source exists but is not yet accepted as loaded/gameplay-tested. Numeric values and graphics are provisional.  
 **Historical evidence and superseded experiments:** [PreOwnerStudy](Research/PreOwnerStudy.md). This file is the **current specification**, not the older candidate's status text.
+
+**2026-10-20 latest author decision — Culture-family ownership:** Tea is a separately installable **AMJ Culture – Tea** child Mod. Renaming the repository and display title changes neither existing Tea source/data ownership nor the two-drink initial scope. **AMJ Culture itself is not a runtime dependency**: a child Mod here denotes thematic family and an independently installable package, not a master/child dependency. Keep the released identity-in-preparation `sucro.ancientmedievaljapan.tea` and all `AMJT_` Def IDs stable; do not add Culture's general drug / dining code or a new prerequisite. Tea/こがし湯 are **non-drug** Joy drinks; MO and AMJ Grains remain optional. Release maturity (XML-only source; provisional art, balance and no accepted in-game test) remains unchanged. Culture's first release need not wait for Tea.
 
 ## 1. Purpose and v1 scope
 
