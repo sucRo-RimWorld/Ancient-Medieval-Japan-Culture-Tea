@@ -1,5 +1,10 @@
 # AMJ Culture Tea Coordination — main only
 
+## CULTURE-TEA-KOGASHI-SWEETS-GATE-20261021 — future intermediate conditional, current drink unchanged
+
+**Owner decision confirmed 2026-10-21:** For the existing low-effect `AMJT_KogashiYu`, keep one direct cooking Bill from Vanilla rice or optional Grains barley. Roasting, milling, and hot-water mixing remain abstracted; no extra roasted-grain ThingDef, mill/grind/roast Bill, shared flour or new dependency. Only reconsider a distinct edible `こがし` intermediate when future Grains confectionery/edible recipes create a justified common-use ingredient; **one sweet does not automatically require it**. Confirm gameplay/labor/stockpile/compatibility economics before a future split. Grains would own the ingredient, Tea the finished drink. Standalone Tea must preserve the rice direct route; with Grains avoid duplicate competing drink Bills. Confirmed in canonical [Tea Design](Docs/Design.md); paired Grains design: [Grains Design](https://github.com/sucRo-RimWorld/Ancient-Medieval-Japan-Grains/blob/main/Docs/Design.md). **Status: specification only, no changes to current production XML or game acceptance.**
+
+
 ## CULTURE-TEA-EXCESS-SLEEP-20261020 — author-approved nonaddictive caffeine effect implemented, untested
 
 **Owner:** Culture Tea. **Production+design main:** `d77ed085d0600824bba080001630a125038af5a4` ([Tea PR #7](https://github.com/sucRo-RimWorld/Ancient-Medieval-Japan-Culture-Tea/pull/7)). **Status:** source and specification integrated; **no native game acceptance**, values provisional.
