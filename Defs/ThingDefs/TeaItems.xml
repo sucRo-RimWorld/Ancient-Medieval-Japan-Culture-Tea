@@ -6,7 +6,7 @@
     <description>Fresh leaves from a tea shrub. Heat and dry them before making tea; they are not an ordinary cooking ingredient.</description>
     <graphicData><texPath>Things/Item/PlantFoodRaw/RawBerries</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
     <thingCategories><li>PlantMatter</li></thingCategories>
-    <statBases><MarketValue>0.7</MarketValue><Mass>0.02</Mass><DeteriorationRate>1.0</DeteriorationRate></statBases>
+    <statBases><MarketValue>0.7</MarketValue><Mass>0.01</Mass><DeteriorationRate>1.0</DeteriorationRate></statBases>
     <stackLimit>75</stackLimit>
     <tickerType>Rare</tickerType>
     <comps><li Class="CompProperties_Rottable"><daysToRotStart>6</daysToRotStart><rotDestroys>true</rotDestroys></li></comps>
@@ -17,7 +17,7 @@
     <description>Tea leaves briefly heated and dried for keeping. Prepared by boiling to make a simple historical tea.</description>
     <graphicData><texPath>Things/Item/PlantFoodRaw/RawBerries</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
     <thingCategories><li>PlantMatter</li></thingCategories>
-    <statBases><MarketValue>1.2</MarketValue><Mass>0.02</Mass><DeteriorationRate>0.35</DeteriorationRate></statBases>
+    <statBases><MarketValue>1.2</MarketValue><Mass>0.002</Mass><DeteriorationRate>0.35</DeteriorationRate></statBases>
     <stackLimit>75</stackLimit>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
@@ -27,7 +27,7 @@
     <graphicData><texPath>Things/Item/Food/MealSimple</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
     <thingCategories><li>FoodMeals</li></thingCategories>
     <statBases>
-      <MarketValue>3</MarketValue><Mass>0.25</Mass><Nutrition>0.01</Nutrition>
+      <MarketValue>3</MarketValue><Mass>0.2</Mass><Nutrition>0.01</Nutrition>
       <DeteriorationRate>1</DeteriorationRate><FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
     </statBases>
     <stackLimit>25</stackLimit>
@@ -59,7 +59,7 @@
     <graphicData><texPath>Things/Item/Food/MealSimple</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
     <thingCategories><li>FoodMeals</li></thingCategories>
     <statBases>
-      <MarketValue>3</MarketValue><Mass>0.3</Mass><Nutrition>0.15</Nutrition>
+      <MarketValue>4.2</MarketValue><Mass>0.3</Mass><Nutrition>0.15</Nutrition>
       <DeteriorationRate>1</DeteriorationRate><FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
     </statBases>
     <stackLimit>25</stackLimit>
