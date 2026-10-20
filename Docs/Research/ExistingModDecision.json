@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "feature": "Historical non-drug tea and kogashi-yu",
-  "owner": "sucRo-RimWorld/Ancient-Medieval-Japan-Tea",
+  "owner": "sucRo-RimWorld/Ancient-Medieval-Japan-Culture-Tea",
   "scope": "Vanilla RimWorld 1.6 tea bush and leaves, two low-joy non-drug drinks, Vanilla rice and optional AMJ barley. No edible kogashi duplicate.",
   "status": "ready",
   "search": {
