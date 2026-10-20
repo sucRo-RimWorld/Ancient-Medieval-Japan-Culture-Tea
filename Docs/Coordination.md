@@ -1,4 +1,14 @@
-# AMJ Tea Coordination — main only
+# AMJ Culture Tea Coordination — main only
+
+## CULTURE-TEA-OWNER-RENAMED-20261020 — author-directed child Mod identity
+
+**Owner:** `sucRo-RimWorld/Ancient-Medieval-Japan-Culture-Tea`; rename integrated by [Culture Tea PR #5](https://github.com/sucRo-RimWorld/Ancient-Medieval-Japan-Culture-Tea/pull/5), main `edf4ac5e4c0d86a1da74c8be48f0f98708d21aee`. This entry supersedes the old repository-name and packageId mentions below, not the old feature history.
+
+- Culture Tea is an **optional standalone Culture-family child** like Culture-Characters. Culture core is **not** a hard runtime dependency. If present, load the child after Culture; Grains remains optional as an extra barley input.
+- PackageId before publication: `sucro.ancientmedievaljapan.culture.tea`; display name Culture Tea. All `AMJT_*` ThingDef/RecipeDef IDs unchanged. No published/validated saves under the older packageId are known.
+- [Current Tea specification](https://github.com/sucRo-RimWorld/Ancient-Medieval-Japan-Culture-Tea/blob/main/Docs/Design.md), parent [Culture boundary](https://github.com/sucRo-RimWorld/Ancient-Medieval-Japan-Culture/blob/main/Docs/Design.md), [Grains edible kogashi boundary](https://github.com/sucRo-RimWorld/Ancient-Medieval-Japan-Grains/blob/main/Docs/Design.md), and [Project owner pointers](https://github.com/sucRo-RimWorld/Ancient-Medieval-Japan-Project/blob/main/Docs/Roadmap.md) have been aligned. No additional code gameplay, graphics or native acceptance was completed by rename.
+- **Next work:** original Tea test acceptance and implementation completeness, particularly actual two-drink load, reharvest, bills, ingestion and original art. Do not revisit the settled ownership split unless an observed conflict requires it.
+
 
 ## TEA-V1-XML-SOURCE-20261020 — two drinks source implemented; native acceptance pending
 
