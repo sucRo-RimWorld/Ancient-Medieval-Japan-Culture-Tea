@@ -1,13 +1,15 @@
 # AMJ Tea Coordination — main only
 
-## TEA-OWNER-STARTUP-20261020 — dedicated owner and approved scope
+## TEA-V1-XML-SOURCE-20261020 — two drinks source implemented; native acceptance pending
 
-**Owner:** `sucRo-RimWorld/Ancient-Medieval-Japan-Tea` (created by author 2026-10-20).  
-**Status:** Design migration to Tea, not yet a playable or published Mod.
+**Owner:** `sucRo-RimWorld/Ancient-Medieval-Japan-Tea`. **Source main:** `26b198bd0dc8f1bc70d3b3a39f9db1a241963149` ([Tea PR #2](https://github.com/sucRo-RimWorld/Ancient-Medieval-Japan-Tea/pull/2)). **State:** first XML source integrated, **not game-tested or publication ready**.
 
-- Adopted by author: standalone non-drug **tea and kogashi-yu**, kogashi-yu using Vanilla `RawRice` plus optional Grains `AMJC_Barley` in one recipe, small Joy, small positive grain nutrition for kogashi-yu, no modern clear barley tea. Grains owns **edible kogashi** later (not its first release).
-- Formal source: `main:Docs/Design.md`. Historical study: `Docs/Research/PreOwnerStudy.md`. Project holds only an ownership pointer.
-- **Next actionable prerequisite:** finish existing-Mod implementation-entry audit including current source/Def/dependencies for realistic VE and non-VE candidates; compare reuse, prior-art-only and independent small Mod. Record limits and decision using Project validation format. Do not let audit sprawl beyond this practical choice.
-- **Then implement** smallest usable 1.6 source slice (Tea-alone tea/rice kogashi; optional barley) using non-drug ingredients and Vanilla cooking/Joy methods. Finish actual visuals and consolidated gameplay acceptance after source is ready.
-- **Unverified:** code, Plant recurring harvest, actual recipe Bills, Joy/ingestion, nutrition values, graphics, translations, 1.6/1.7 native game, Workshop. The 2026-10-16 XML probe has historical static checks but is not shipped or game-tested.
-- No Steam release or native Actions launch authorized. Do not modify Grains' nine-food release or Culture/Environment.
+- **Implemented source:** `About/About.xml`; renewable tea shrub `AMJT_TeaPlant` (using `harvestAfterGrowth=0.45`), fresh/dried leaves, boiled tea, `AMJT_KogashiYu`, three low-tech Cooking Bills, optional Grains barley from `AMJC_Barley` into the **one same** kogashi drink recipe, optional 1.6 `EatChocolate` JoyGiver patch, Japanese labels/descriptions. Tea and kogashi-yu remain non-drug; no chemical drug classes, comp, needs or buffs.
+- **Prior-art gate evidence:** `Docs/Research/ExistingDrinksAudit.md` and `Docs/Research/ExistingModDecision.json`, comparing 1.6 VE and non-VE source and Erin's public contents. Decision is narrow standalone implementation. **Project script `validate_rule_contract.py --decision` was not run in a checked-out local Project/Tea workspace**; the branch received direct structured-field, XML tag-stack, Def uniqueness and non-drug marker review, not the official validator's PASS. Finish official validation before treating the implementation entry gate as fully verified.
+- **Source static checks:** 8 XML well-formedness-like tag/ampersand scans passed; 8 expected owned defNames present, duplicate0; RawRice and conditional barley refs present; DrugComp/DrugCategory references0 in own ingestibles. These tests do **not** load RimWorld Defs or establish actual in-game workability.
+- **Provisional values:** tea `Nutrition=0.01` purely to allow ordinary manual/inventory ingestion without becoming a food source; kogashi-yu `0.05`; recreation `0.08/0.06`, growDays12, ingredient counts/work/rot times as captured in `Docs/Design.md`. None are final approved balance.
+- **Temporary Vanilla texPaths:** graphical assets are not accepted; no original Tea image files exist. Do not advertise visuals as finished. Source is not a release candidate.
+- **Next concrete acceptance:** run the official pre-implementation decision validator in a real workspace; check native 1.6 loading (all XML/paths, tea shrub can be sown and harvested twice, three Cooking Bills and reagent consumption, tea and kogashi-yu manual/inventory+voluntary drinking, Joy gain, positive but small kogashi nutrition, no DrugPolicy/Hediff/food poisoning/table aberrations) using **minimum** Vanilla and optional Grains profile. Confirm exact Grains matching loaded Mod name for conditional patch; 1.7 is not claimed.
+- **Outside this slice:** food-form edible kogashi remains Grains future, not its nine-food initial release. Other barley Mods remain unverified; no VE compatibility. No Steam upload, native Actions or expensive automated tests authorized merely by merging source.
+
+**Canonical specification:** `Docs/Design.md`. **Historical source archive:** `Docs/Research/PreOwnerStudy.md`. Cross-repo Grains food/drink boundary already documented in its own `Docs/Design.md`. No user relay required.
