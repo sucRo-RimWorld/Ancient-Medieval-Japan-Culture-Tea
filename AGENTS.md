@@ -1,4 +1,4 @@
-# AMJ Tea — Agent Instructions
+# AMJ Culture – Tea — Agent Instructions
 
 ## Start here
 
@@ -7,6 +7,8 @@
 3. When changing historical description, consult [Docs/Research/PreOwnerStudy.md](Docs/Research/PreOwnerStudy.md) and the Project historical-prose procedure.
 
 ## Ownership
+
+- This is the **Culture-family Tea child Mod** (separate, optionally installed product). The parent AMJ Culture is **not** a mandatory runtime dependency; never duplicate its general Thoughts/drug rules. Keep the existing `sucro.ancientmedievaljapan.tea` packageId and existing `AMJT_` Def identities when updating public branding.
 
 - Tea solely owns the tea plant/leaves, historical tea production, tea and **kogashi-yu** finished drinks, drink Recipe/Def, Joy, ingestion and local compatibility patches.
 - Tea provides a **Vanilla-only** path: tea and rice-based kogashi-yu; optionally adds Grains `AMJC_Barley` as another ingredient to the **same** kogashi-yu product when Grains is installed.
