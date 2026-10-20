@@ -8,7 +8,7 @@
     <li>sucro.ancientmedievaljapan.culture</li>
     <li>sucro.ancientmedievaljapan.core</li>
   </loadAfter>
-  <description>Optional AMJ Culture-family child Mod. Historical everyday tea and toasted-grain-flour kogashi-yu, as non-drug recreational drinks. Tea is self-contained; AMJ Grains barley is an optional ingredient for kogashi-yu. Early development build: provisional values and Vanilla graphics; no game-run acceptance yet.
+  <description>Optional AMJ Culture-family child Mod. Historical everyday tea and toasted-grain-flour kogashi-yu as non-drug recreational drinks. Excess tea in a short time temporarily lowers sleep recovery, without addiction or withdrawal. Tea is self-contained; AMJ Grains barley is an optional ingredient for kogashi-yu. Early development build: provisional values and Vanilla graphics; no game-run acceptance yet.
 
-Culture系列の独立した子Mod（Culture本体は必須ではない）。中世日本の日常の茶と、米・大麦の炒り粉を湯で溶いたこがし湯を追加する。非ドラッグの軽い娯楽飲料。Grainsの大麦は任意連携。開発中につき数値・画像・実機動作は未確定。</description>
+Culture系列の独立した子Mod（Culture本体は必須ではない）。中世日本の日常の茶と、米・大麦の炒り粉を湯で溶いたこがし湯を追加する。非ドラッグの軽い娯楽飲料。茶は短時間に飲み過ぎると一時的に休息回復が遅くなるが、依存・耐性・離脱症状はない。Grainsの大麦は任意連携。開発中につき数値・画像・実機動作は未確定。</description>
 </ModMetaData>
