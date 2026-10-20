@@ -27,7 +27,7 @@
     <graphicData><texPath>Things/Item/Food/MealSimple</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
     <thingCategories><li>FoodMeals</li></thingCategories>
     <statBases>
-      <MarketValue>3</MarketValue><Mass>0.25</Mass><Nutrition>0</Nutrition>
+      <MarketValue>3</MarketValue><Mass>0.25</Mass><Nutrition>0.01</Nutrition>
       <DeteriorationRate>1</DeteriorationRate><FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
     </statBases>
     <stackLimit>25</stackLimit>
