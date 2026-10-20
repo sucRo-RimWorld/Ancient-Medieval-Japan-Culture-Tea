@@ -23,7 +23,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>AMJT_BoiledTea</defName>
     <label>tea</label>
-    <description>A cup of tea prepared from heated, dried leaves. A small everyday enjoyment without drug or stimulant effects.</description>
+    <description>A cup of tea prepared from heated, dried leaves. A small everyday enjoyment; drinking too much in a short time may briefly hinder restful sleep. No addiction or withdrawal.</description>
     <graphicData><texPath>Things/Item/Food/MealSimple</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
     <thingCategories><li>FoodMeals</li></thingCategories>
     <statBases>
@@ -42,6 +42,12 @@
       <chairSearchRadius>0</chairSearchRadius>
       <ingestHoldUsesTable>false</ingestHoldUsesTable>
       <ingestSound>Ingest_Drink</ingestSound>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AMJT_TeaCaffeineLoad</hediffDef>
+          <severity>0.35</severity>
+        </li>
+      </outcomeDoers>
       <ingestCommandString>Drink {0}</ingestCommandString>
       <ingestReportString>Drinking {0}.</ingestReportString>
     </ingestible>
