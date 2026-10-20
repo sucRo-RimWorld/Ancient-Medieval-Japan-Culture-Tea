@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <AMJT_TeaPlant.label>チャノキ</AMJT_TeaPlant.label>
+  <AMJT_TeaPlant.description>葉を繰り返し摘み取り、加熱・乾燥させて茶に用いる常緑の茶樹。</AMJT_TeaPlant.description>
+  <AMJT_FreshTeaLeaves.label>生茶葉</AMJT_FreshTeaLeaves.label>
+  <AMJT_FreshTeaLeaves.description>摘み取った茶の生葉。加熱して乾燥させ、飲用の茶葉に加工する。</AMJT_FreshTeaLeaves.description>
+  <AMJT_DriedTeaLeaves.label>乾燥茶葉</AMJT_DriedTeaLeaves.label>
+  <AMJT_DriedTeaLeaves.description>加熱・乾燥させた茶葉。煮出して茶にする。</AMJT_DriedTeaLeaves.description>
+  <AMJT_BoiledTea.label>茶</AMJT_BoiledTea.label>
+  <AMJT_BoiledTea.description>乾燥した茶葉を煮出した茶。薬物ではなく、わずかな娯楽をもたらす。</AMJT_BoiledTea.description>
+  <AMJT_KogashiYu.label>こがし湯</AMJT_KogashiYu.label>
+  <AMJT_KogashiYu.description>米や大麦を炒って粉にし、湯に溶いて飲食する。粉ごと摂るため、わずかな栄養がある。</AMJT_KogashiYu.description>
+</LanguageData>
