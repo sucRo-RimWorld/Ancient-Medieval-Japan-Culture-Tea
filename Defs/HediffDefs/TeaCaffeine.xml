@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--
+    Not a drug or addiction: this single temporary Hediff is a countersink for
+    several servings consumed close together. Stage 0 is invisible and harmless.
+    A third cup by a standard BodySize=1 pawn within roughly 2-3 in-game hours
+    reaches stage 1, giving only a small penalty while actually sleeping.
+    Severity decays in the ordinary passage of time. No custom ticking code.
+  -->
+  <HediffDef>
+    <defName>AMJT_TeaCaffeineLoad</defName>
+    <label>too much tea</label>
+    <description>Tea contains caffeine. Drinking several cups in a short time can make sleep less restful; the effect wears off naturally.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <initialSeverity>0.35</initialSeverity>
+    <maxSeverity>1.4</maxSeverity>
+    <makesAlert>false</makesAlert>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.4</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+        <minSeverity>0.9</minSeverity>
+        <label>sleep disturbed by too much tea</label>
+        <statOffsets>
+          <RestRateMultiplier>-0.15</RestRateMultiplier>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>
