@@ -1,4 +1,4 @@
-# AMJ Tea — Agent Instructions
+# AMJ Culture Tea — Agent Instructions
 
 ## Start here
 
@@ -8,10 +8,12 @@
 
 ## Ownership
 
+- This is the **optional Culture-family child Mod** `Ancient-Medieval-Japan-Culture-Tea`, analogous in grouping to Culture-Characters. It does **not** require Culture at runtime. Keep the standalone Vanilla tea/rice-kogashi route, and support optional Culture/Grains co-installation without moving existing Culture drug/Thought systems.
+
 - Tea solely owns the tea plant/leaves, historical tea production, tea and **kogashi-yu** finished drinks, drink Recipe/Def, Joy, ingestion and local compatibility patches.
 - Tea provides a **Vanilla-only** path: tea and rice-based kogashi-yu; optionally adds Grains `AMJC_Barley` as another ingredient to the **same** kogashi-yu product when Grains is installed.
 - Grains owns growing/processing barley, rice and other cereal crops, and any future **edible (non-drink)** kogashi flour/food. Do not duplicate Grains' flour, edible recipes, grain texture assets or change Grains' first release.
-- Culture owns cultural dining/table Thought changes, drugs and dependencies. Tea drinks are not drugs. Environment owns biomes/biogeography; add no default tea trees to Environment.
+- Parent Culture owns global cultural dining/table Thought changes, historic drug restrictions and intoxication systems. Culture Tea drinks are not drugs; keep those responsibilities separate. Environment owns biomes/biogeography; add no default tea trees to Environment.
 
 ## Entry and release gates
 
