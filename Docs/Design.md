@@ -1,7 +1,7 @@
 # Ancient & Medieval Japan — Tea / 茶とこがし湯
 
 **Owner:** [Ancient-Medieval-Japan-Tea](https://github.com/sucRo-RimWorld/Ancient-Medieval-Japan-Tea)  
-**Decision date:** 2026-10-20. **State:** historical/gameplay scope accepted; production implementation, values, art and actual runtime not yet accepted.  
+**Decision date:** 2026-10-20. **State:** scope accepted; initial XML source exists but is not yet accepted as loaded/gameplay-tested. Numeric values and graphics are provisional.  
 **Historical evidence and superseded experiments:** [PreOwnerStudy](Research/PreOwnerStudy.md). This file is the **current specification**, not the older candidate's status text.
 
 ## 1. Purpose and v1 scope
@@ -49,4 +49,16 @@ The definite first two grain types are **rice and barley only**. Wheat, awa, hie
 4. Create source files/required Japanese+English labels/art only when implementation entry is cleared and art is accepted. Independently prove loaded Defs, rice and optional barley Bills, manual/voluntary drinking, health absence, and repeat harvest.
 5. Run minimal consolidated 1.6 Vanilla and Tea+Grains acceptance. 1.7 compatibility is not presumed. No automatic expensive test runs or publication.
 
-**No product files are implemented by this design document.**
+## 6. Current XML implementation (2026-10-20; unverified candidate)
+
+The Tea repository now contains **source XML**, not a released or game-tested Mod: `About/About.xml`, `Defs/ThingDefs/TeaPlants.xml`, `Defs/ThingDefs/TeaItems.xml`, `Defs/RecipeDefs/TeaRecipes.xml`, `Patches/TeaJoy.xml`, `Patches/GrainsBarley.xml`, and Japanese ThingDef/RecipeDef translations. Existing-Mod decision evidence is `Docs/Research/ExistingDrinksAudit.md` and `Docs/Research/ExistingModDecision.json`.
+
+- **Plant contract:** `AMJT_TeaPlant` has `harvestAfterGrowth=0.45` and `harvestMinGrowth=0.75`, following the game's documented non-destructive plant harvest logic; 12 nominal growDays, 6 leaves per harvest. Two-harvest in-game behavior is **unverified**.
+- **Tea Bill:** 5 fresh leaves => 5 dried; 2 dried leaves => 1 cup of `AMJT_BoiledTea`. `Nutrition=0.01` is an ingestion/UI technical placeholder only, **not** intended as useful sustenance; `joy=0.08`. No drug category, CompProperties_Drug, mood/Hediff or rest effects.
+- **Kogashi-yu Bill:** three Vanilla `RawRice` => one `AMJT_KogashiYu`; same recipe accepts Grains `AMJC_Barley` through an exact-display-name conditional patch. `Nutrition=0.05`, `joy=0.06`. These values are **provisional**, not balance approval.
+- **Work / storage placeholders:** Cooking bills `workAmount=250, 180, 230`; drinks rot after 2 days, fresh leaves after 6 days. Low-tech Vanilla `Campfire`, `FueledStove`, `ElectricStove` only.
+- **Joy:** existing Vanilla `EatChocolate` giver is patched to include the two drink Defs. This avoids drug policies but needs actual loaded-game confirmation. Positive micro-nutrition for tea permits gear-tab consumption under the legacy `IsNutritionGivingIngestible` contract; confirm on 1.6 before release.
+- **Images:** product XML references **unapproved temporary Vanilla texPaths**, not finished Tea graphics. Do not distribute as an art-complete or accepted subscriber package.
+- **Not tested:** source Def resolution, XML patches, jobs/Bills, ingredient filters, two tea harvests, actual consumption, table Thought, Joy saturation, no unwanted food poisoning, original graphic paths, any 1.7 behavior. A static structure review is not a RimWorld PASS.
+
+All material implementation decisions must be reconciled with the already accepted v1 two-drink boundary; changes to graphics, numerical balance or third-party integration require their own review where applicable.
