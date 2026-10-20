@@ -12,9 +12,9 @@
     <statBases><MaxHitPoints>90</MaxHitPoints><Nutrition>0.01</Nutrition></statBases>
     <selectable>true</selectable>
     <pathCost>10</pathCost>
+    <!-- All numeric plant parameters below are provisional, not author-approved. -->
     <plant>
       <harvestedThingDef>AMJT_FreshTeaLeaves</harvestedThingDef>
-      <!-- Unapproved source placeholder from initial PR #2; the author has NOT approved a six-leaf harvest. -->
       <harvestYield>6</harvestYield>
       <harvestMinGrowth>0.75</harvestMinGrowth>
       <harvestAfterGrowth>0.45</harvestAfterGrowth>

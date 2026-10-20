@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+  <!-- All item numeric statistics (mass, price, spoilage, nutrition, Joy, ingest time, Hediff severity, etc.) are provisional, not author-approved. -->
   <ThingDef ParentName="ResourceBase">
     <defName>AMJT_FreshTeaLeaves</defName>
     <label>fresh tea leaves</label>
