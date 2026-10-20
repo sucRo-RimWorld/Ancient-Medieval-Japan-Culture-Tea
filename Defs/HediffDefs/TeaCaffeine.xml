@@ -3,6 +3,7 @@
   <!--
     Not a drug or addiction: this single temporary Hediff is a countersink for
     several servings consumed close together. Stage 0 is invisible and harmless.
+    All numerical values in this file are provisional and not author-approved.
     A third cup by a standard BodySize=1 pawn within roughly 2-3 in-game hours
     reaches stage 1, giving only a small penalty while actually sleeping.
     Severity decays in the ordinary passage of time. No custom ticking code.
