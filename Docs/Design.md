@@ -1,6 +1,8 @@
-# Ancient & Medieval Japan — Tea / 茶とこがし湯
+# Ancient & Medieval Japan — Culture Tea / 中世日本 - 文化・茶
 
-**Owner:** [Ancient-Medieval-Japan-Tea](https://github.com/sucRo-RimWorld/Ancient-Medieval-Japan-Tea)  
+**Owner:** [Ancient-Medieval-Japan-Culture-Tea](https://github.com/sucRo-RimWorld/Ancient-Medieval-Japan-Culture-Tea)  
+**Owner classification (2026-10-20 author revision):** Culture-family child `Culture-Tea`, like Culture-Characters. Independent optional runtime; **no hard dependency** on Culture, Grains or MO. `Culture-Tea` owns both tea and kogashi-yu drink Defs/Recipes/Joy; Culture core keeps existing drugs, tobacco/alcohol policies and global table/Thought behavior. Existing tea `AMJT_*` Def names remain stable; pre-release packageId is now `sucro.ancientmedievaljapan.culture.tea`. The repository rename is not evidence of 1.6/1.7 validation.
+
 **Decision date:** 2026-10-20. **State:** scope accepted; initial XML source exists but is not yet accepted as loaded/gameplay-tested. Numeric values and graphics are provisional.  
 **Historical evidence and superseded experiments:** [PreOwnerStudy](Research/PreOwnerStudy.md). This file is the **current specification**, not the older candidate's status text.
 
@@ -8,7 +10,7 @@
 
 Provide **exactly two modest everyday consumables**, `茶` (historically prepared tea) and `こがし湯` (grain flour toasted and stirred into hot water), as **non-drug** sources of small recreation. Preserve historical Japanese production without caffeine/drug mechanics, dependency or withdrawal, special health/Rest effects, strong mood boosts or emergency mental-break rescue.
 
-This is a small separate Mod; neither Grains, Culture, MO, Environment nor VE is a required runtime dependency. Do not add modern bottled/cold barley tea, coffee, black tea, matcha ceremonies, tea rooms, caffeine needs, new water need, addiction policy, medical/health buffs or extensive variant recipes. Do not relabel RimWorld's psychite tea as ordinary tea.
+This is a **Culture-series independent child Mod**, not an embedded module of Culture. Neither Grains, Culture, MO, Environment nor VE is a required runtime dependency. Do not add modern bottled/cold barley tea, coffee, black tea, matcha ceremonies, tea rooms, caffeine needs, new water need, addiction policy, medical/health buffs or extensive variant recipes. Do not relabel RimWorld's psychite tea as ordinary tea.
 
 ## 2. Finished goods and recipes
 
