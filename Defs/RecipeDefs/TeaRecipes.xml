@@ -10,9 +10,9 @@
     <effectWorking>Cook</effectWorking>
     <ingredientValueGetterClass>IngredientValueGetter_Volume</ingredientValueGetterClass>
     <recipeUsers><li>Campfire</li><li>FueledStove</li><li>ElectricStove</li></recipeUsers>
-    <ingredients><li><filter><thingDefs><li>AMJT_FreshTeaLeaves</li></thingDefs></filter><count>5</count></li></ingredients>
+    <ingredients><li><filter><thingDefs><li>AMJT_FreshTeaLeaves</li></thingDefs></filter><count>6</count></li></ingredients>
     <fixedIngredientFilter><thingDefs><li>AMJT_FreshTeaLeaves</li></thingDefs></fixedIngredientFilter>
-    <products><AMJT_DriedTeaLeaves>5</AMJT_DriedTeaLeaves></products>
+    <products><AMJT_DriedTeaLeaves>6</AMJT_DriedTeaLeaves></products>
   </RecipeDef>
   <RecipeDef>
     <defName>AMJT_BoilTea</defName>
