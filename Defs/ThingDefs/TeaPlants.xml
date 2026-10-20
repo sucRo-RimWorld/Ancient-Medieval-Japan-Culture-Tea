@@ -14,6 +14,7 @@
     <pathCost>10</pathCost>
     <plant>
       <harvestedThingDef>AMJT_FreshTeaLeaves</harvestedThingDef>
+      <!-- Unapproved source placeholder from initial PR #2; the author has NOT approved a six-leaf harvest. -->
       <harvestYield>6</harvestYield>
       <harvestMinGrowth>0.75</harvestMinGrowth>
       <harvestAfterGrowth>0.45</harvestAfterGrowth>
