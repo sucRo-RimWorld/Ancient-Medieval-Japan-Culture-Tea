@@ -1,5 +1,15 @@
 # AMJ Culture Tea Coordination — main only
 
+## CULTURE-TEA-EXCESS-SLEEP-20261020 — author-approved nonaddictive caffeine effect implemented, untested
+
+**Owner:** Culture Tea. **Production+design main:** `d77ed085d0600824bba080001630a125038af5a4` ([Tea PR #7](https://github.com/sucRo-RimWorld/Ancient-Medieval-Japan-Culture-Tea/pull/7)). **Status:** source and specification integrated; **no native game acceptance**, values provisional.
+
+- The author accepted **no caffeine addiction, tolerance, withdrawal, DrugPolicy or chemical-drug system**. Ordinary tea only gives small recreation. Tea consumed in excess shortly before sleep temporarily reduces **sleeping RestRateMultiplier**; kogashi-yu is unaffected; no positive stimulant buffs or forced wake/sleep cancellation.
+- Source: `Defs/HediffDefs/TeaCaffeine.xml`, `Defs/ThingDefs/TeaItems.xml`, Japanese Hediff and Tea labels, `Docs/Design.md`, prior-art decision + checksum and About descriptions. XML-only 0.35/cup with initial hidden no-effect stage, threshold 0.9 (normally 3 close cups at BodySize=1), RestRateMultiplier -0.15, decay -1.4/day. Values are **provisional balance**, not historical or native-test PASS. Future powdered tea is **not** implemented by this PR; if added it should use the same nonaddiction rule.
+- **Static checks:** XML tag nesting/ampersands 5 modified XML PASS; the effect is referenced by boiled tea only; kogashi remains caffeine-free; forbidden drug/chemical/addiction names absent. **Game acceptance still pending:** actual RimWorld 1.6 Def load, ingest behavior, 1/2/3 cups+elapsed time, sleeping-rest effect, transient removal, no drug scheduling. No automatic game tests authorized by this entry.
+- **Supersedes** the 2026-10-20 early XML entry's statement that Tea has no Hediff or Rest effects, **only for negative overconsumption-side sleep recovery**. The original prior art and native-untested history remain as evidence. Culture, Grains and Environment owner boundaries unchanged.
+
+
 ## CULTURE-TEA-OWNER-RENAMED-20261020 — author-directed child Mod identity
 
 **Owner:** `sucRo-RimWorld/Ancient-Medieval-Japan-Culture-Tea`; rename integrated by [Culture Tea PR #5](https://github.com/sucRo-RimWorld/Ancient-Medieval-Japan-Culture-Tea/pull/5), main `edf4ac5e4c0d86a1da74c8be48f0f98708d21aee`. This entry supersedes the old repository-name and packageId mentions below, not the old feature history.
